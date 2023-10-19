@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.items-all{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item img{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.item>div{
+    position: relative;
+}
+
+
+
+.item button{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: #be9c79;
+    /* border: 1px solid transparent; */
+    padding: 10px 30px;
+    font-weight: 600;
+    height: 50px;
+    width: 180px;
+    opacity: 0;
+    /* transition: 0.5s; */
+
+
+    background: linear-gradient(to right, #000 50%, #be9c79 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.item>div:hover button{
+    opacity: 1;
+}
+
+.item>div:hover img{
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+
+.container {
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg);
+    padding-bottom: 200px;
+}
+
+
+
+.title{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.title img{
+    padding-top: 20px;
+}
+
+.items-all{
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+h2{
+    color: #262626;
+    font-family: 'Marcellus', serif;
+    font-weight: 400;
+    font-size: 45px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.55em;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    color: #262626;
+}
+
+h5{
+    color: #262626;
+    font-family: 'Marcellus', serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 10px 0 4px;
+    text-align: center;
+}
+h5:hover{
+    color: #be9c79;
+    cursor: pointer;
+}
+
+
+.items-all span{
+    display: block;
+    margin: 9px 0 0;
+    line-height: 1;
+    color: #777;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.item button:hover{
+    background-position: left bottom;
+    /* background-color: #000; */
+    color: #fff;
+    cursor: pointer;
+}
